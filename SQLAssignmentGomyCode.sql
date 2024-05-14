@@ -8,7 +8,7 @@ address VARCHAR(50) NOT NULL
 CREATE TABLE products(
 product_id INTEGER PRIMARY KEY,
 name VARCHAR(50) NOT NULL,
-price DECIMAL CHECK(price > 0) NOT NULL
+price DECIMAL(4, 2) CHECK(price > 0) NOT NULL
 );
 
 
