@@ -43,8 +43,19 @@ INSERT INTO Orders(order_id, customers_id, product_id, quantity, order_date)
 VALUES (1, 1, 2, 3, '2023-01-22' ), 
        (2, 2, 1, 10, '2023-04-14') ;
 
-SELECT * FROM Customers;
+--Updating a row
+UPDATE Orders SET quantity = 6 WHERE order_id = 2;
 
-SELECT * FROM Orders;
+--Deleting a column
+DELETE FROM Customers WHERE customers_id = 3;
+
+--deleting and dropping tables
+DELETE FROM Orders;
+
+DROP TABLE Orders;
+
+--selecting tables
+
+SELECT * FROM Customers;
 
 SELECT * FROM products;
