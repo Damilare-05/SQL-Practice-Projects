@@ -33,6 +33,7 @@ Authors.author_id = Books.author_id
 GROUP BY nationality, author_name
 HAVING nationality = 'British';
 
+--or
 
 SELECT COUNT(*) AS Number_of_books
 FROM Authors JOIN Books ON 
@@ -62,14 +63,15 @@ JOIN Orders ON
 Books.book_id = Orders.book_id 
 WHERE YEAR(order_date) = 2023;
 
+--or
+
 SELECT title, YEAR(order_date) AS YEAR_2023 FROM Books
 JOIN Orders ON 
 Books.book_id = Orders.book_id 
 WHERE YEAR(order_date) = 2023;
 
 -- 9. Retrieve the most recent review for each book.
-
-
+--no definite column to query this
 -- 10. Find all customers who have never placed an order.
 
 SELECT name FROM Customers
@@ -87,7 +89,9 @@ ORDER BY Average_rating DESC;
 
 -- 12. Retrieve the details of all American authors.
 
-SELECT * FROM Authors where nationality = 'American'
+SELECT * FROM Authors where nationality = 'American';
+
+--or
 
 SELECT Authors.author_id, author_name, nationality, title FROM Authors 
 JOIN Books ON 
