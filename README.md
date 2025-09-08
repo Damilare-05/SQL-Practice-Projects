@@ -84,7 +84,7 @@ SELECT TOP 5 * FROM Orders;
 ├── Checkpoint2.sql                   # Second checkpoint level
 ├── Practice Questions for DQL Statements.sql  # Core DQL practice exercises
 ├── SQL Final project.sql             # Comprehensive final SQL project file
-├── SQLAssignmentGomyCode.sql         # Possibly an assignment or earlier practice file
+├── SQLAssignmentGomyCode.sql         #  an assignment or practice file
 ├── SQLQueryPractice.sql              # Additional practice queries
 ├── Solution.ssmssln                  # Visual Studio solution with corresponding queries
 ├── README.md                         # This file
